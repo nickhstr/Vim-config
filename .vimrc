@@ -115,11 +115,21 @@ execute pathogen#infect()
 
 " Colors
 set number
-colorscheme hybrid_material
+
+if &term == "xterm-256color"
+  colorscheme hybrid_material
+  hi LineNr ctermfg=235
+  hi Comment ctermfg=235
+  hi NonText ctermfg=235
+else
+  set t_Co=256
+  colorscheme hybrid_material
+  hi LineNr ctermfg=DarkGrey
+  hi Comment ctermfg=DarkGrey
+  hi NonText ctermfg=DarkGrey
+endif
+
 hi Normal ctermbg=None
-hi LineNr ctermfg=235
-hi Comment ctermfg=235
-hi NonText ctermfg=235
 
 " Start NerdTree on launch
 "autocmd vimenter * NERDTree
@@ -163,4 +173,9 @@ endfun
 " Remap <Enter> to split the line and insert a new line in between if
 " BreakLine return True
 inoremap <expr> <CR> BreakLine() ? "<CR><ESC>O" : "<CR>"
+
+" vim-airline
+set laststatus=2
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#syntastic#enabled = 1
 
