@@ -179,4 +179,5 @@ set laststatus=2
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
+let g:airline_theme = "jellybeans"
 
