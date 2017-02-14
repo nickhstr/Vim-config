@@ -130,6 +130,9 @@ else
 endif
 
 hi Normal ctermbg=None
+set cursorline
+hi CursorLine cterm=None ctermfg=None ctermbg=None
+hi CursorLineNr cterm=None ctermfg=DarkGrey ctermbg=0
 
 " Start NerdTree on launch
 "autocmd vimenter * NERDTree
