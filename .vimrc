@@ -123,7 +123,6 @@ if &term == "xterm-256color"
   hi CursorLineNr ctermfg=237 ctermbg=234
   hi Comment ctermfg=238
   hi Normal ctermbg=None
-  hi VertSplit ctermfg=237 ctermbg=234
 else
   set t_Co=256
   colorscheme hybrid_material
@@ -132,13 +131,13 @@ else
   hi CursorLineNr ctermfg=DarkGrey
   hi Normal ctermbg=234
   hi Comment ctermfg=DarkGrey
-  hi VertSplit ctermfg=DarkGrey ctermbg=234
 endif
 
 set cursorline
 hi CursorLine cterm=None ctermbg=None
 hi CursorLineNr cterm=None ctermbg=16
 hi Search ctermfg=255 ctermbg=25
+hi VertSplit ctermfg=234 ctermbg=234
 
 " Start NerdTree on launch
 "autocmd vimenter * NERDTree
