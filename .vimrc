@@ -153,6 +153,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_quiet_messages = {"type": "style"}
 
 let g:syntastic_cpp_compiler_options = " -std=c++11"
 
@@ -188,4 +189,7 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
 let g:airline_theme = "jellybeans"
+
+" Syntax settings
+" let g:polyglot_disabled = ['python']
 
