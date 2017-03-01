@@ -191,5 +191,5 @@ let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
 let g:airline_theme = "jellybeans"
 
 " Syntax settings
-" let g:polyglot_disabled = ['python']
+let g:polyglot_disabled = ['python']
 
