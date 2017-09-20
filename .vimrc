@@ -26,7 +26,6 @@ if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
   set backup		" keep a backup file (restore to previous version)
-  set undofile		" keep an undo file (undo changes after closing)
 endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
@@ -62,6 +61,8 @@ if has("autocmd")
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
+  " filetype plugin indent on
+  
   filetype plugin indent on
 
   " Put these in an autocmd group, so that we can delete them easily.
@@ -109,6 +110,7 @@ endif
 
 " Switch off automatic backup file
 set nobackup
+set noundofile
 
 " Pathogen - Runtime Path Manipulation
 execute pathogen#infect()
@@ -153,6 +155,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_go_checkers = ["go", "errcheck", "go"]
+
 let g:syntastic_quiet_messages = {"type": "style"}
 
 let g:syntastic_cpp_compiler_options = " -std=c++11"
@@ -192,4 +196,32 @@ let g:airline_theme = "jellybeans"
 
 " Syntax settings
 let g:polyglot_disabled = ['python']
+let g:jsx_ext_required = 0
 
+" NERDTree settings
+let NERDTreeShowHidden=1
+let g:nerdtree_tabs_open_on_console_startup = 1
+
+" gitgutter settings
+set updatetime=250
+
+" vim-go settings
+let g:go_highlight_structs = 1 
+let g:go_highlight_methods = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_extra_types = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 0
+
+" vim-esearch
+let g:esearch = {
+    \ 'out': 'qflist',
+    \}
+
+" Startup commands
+autocmd VimEnter * NERDTree
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

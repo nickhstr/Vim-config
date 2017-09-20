@@ -1,5 +1,6 @@
 " Font
-set guifont=Roboto\ Mono\ for\ Powerline:h14
+set guifont=Hack:h14
+set linespace=3
 
 " Colorscheme
 colorscheme hybrid_material
@@ -15,7 +16,7 @@ hi Type gui=bold
 hi ColorColumn guibg=#2a2c30
 
 " Style Guide
-set colorcolumn=80
+set colorcolumn=100
 
 " GUI Options
 set guioptions=egm
