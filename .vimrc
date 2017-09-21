@@ -218,9 +218,7 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 0
 
 " vim-esearch
-let g:esearch = {
-    \ 'out': 'qflist',
-    \}
+let g:esearch#out#win#open = 'enew'
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
