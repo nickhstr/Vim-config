@@ -222,6 +222,8 @@ let g:esearch = {
     \ 'out': 'qflist',
     \}
 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 " Startup commands
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

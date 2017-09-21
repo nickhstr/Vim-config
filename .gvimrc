@@ -1,6 +1,6 @@
 " Font
 set guifont=Hack:h14
-set linespace=3
+set linespace=5
 
 " Colorscheme
 colorscheme hybrid_material
@@ -24,3 +24,5 @@ set guioptions=egm
 " Airline Options
 let g:airline_theme = 'base16_google'
 
+" Startup command
+autocmd VimEnter * NERDTree
