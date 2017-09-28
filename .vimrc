@@ -149,23 +149,28 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:syntastic_go_checkers = ["go", "errcheck", "go"]
+" let g:syntastic_javascript_checkers = ["eslint"]
+" let g:syntastic_go_checkers = ["go", "errcheck", "go"]
 
-let g:syntastic_quiet_messages = {"type": "style"}
+" let g:syntastic_quiet_messages = {"type": "style"}
 
-let g:syntastic_cpp_compiler_options = " -std=c++11"
+" let g:syntastic_cpp_compiler_options = " -std=c++11"
 
 " Better window management
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" General defaults
+set scrolloff=5
+set autoread
+set ignorecase
 
 " Code Folding
 set foldmethod=indent
@@ -214,8 +219,9 @@ let g:go_highlight_build_constraints = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_extra_types = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave = 0
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
+let g:go_metalinter_autosave = 1
 
 " vim-esearch
 let g:esearch#out#win#open = 'enew'
@@ -225,3 +231,5 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " Startup commands
 " autocmd VimEnter * NERDTree
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2
