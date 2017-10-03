@@ -24,5 +24,8 @@ set guioptions=egm
 " Airline Options
 let g:airline_theme = 'base16_google'
 
+" ALE GUI settings
+let g:ale_sign_column_always = 1
+
 " Startup command
 autocmd VimEnter * NERDTree
