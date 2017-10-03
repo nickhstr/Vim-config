@@ -223,6 +223,15 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
 let g:go_metalinter_autosave = 1
 
+" Completor settings
+let g:completor_blacklist = ['tagbar', 'qf', 'netrw', 'unite', 'vimwiki', 'go']
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
+
+" YouCompleteMe settings
+" let g:ycm_filetype_whitelist = { 'go': 1 }
+
 " vim-esearch
 let g:esearch#out#win#open = 'enew'
 
