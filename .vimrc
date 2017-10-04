@@ -209,6 +209,11 @@ let g:nerdtree_tabs_open_on_console_startup = 1
 
 " gitgutter settings
 set updatetime=250
+if exists('&signcolumn')  " Vim 7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
 
 " vim-go settings
 let g:go_highlight_structs = 1 
@@ -242,3 +247,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
+autocmd BufNewFile,BufRead .babelrc set syntax=json
+autocmd BufNewFile,BufRead .eslintrc set syntax=json
+autocmd BufNewFile,BufRead .stylelintrc set syntax=json
