@@ -24,11 +24,11 @@ hi EndOfBuffer guifg=#3C4C55
 
 " Indent Guide
 let g:indentLine_enabled = 0
-let g:indentLine_color_gui = '#3c3e42'
-let g:indentLine_bgcolor_gui = '#282a2e'
+let g:indentLine_color_gui = '#6A7D89'
+let g:indentLine_bgcolor_gui = '#3C4C55'
 
 " Style Guide
-set colorcolumn=100
+" set colorcolumn=100
 
 " GUI Options
 set guioptions=egm

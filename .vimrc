@@ -119,12 +119,12 @@ execute pathogen#infect()
 set number
 
 if &term == "xterm-256color"
-  colorscheme hybrid_material
-  hi LineNr ctermfg=237 ctermbg=234
-  hi NonText ctermfg=234 ctermbg=234
-  hi CursorLineNr ctermfg=237 ctermbg=234
-  hi Comment ctermfg=238
-  hi Normal ctermbg=None
+  " Colorscheme
+  colorscheme nova
+  hi VertSplit guifg=#3C4C55 guibg=#3C4C55
+  hi NonText guifg=#3C4C55 guibg=#3C4C55
+  hi Normal guibg=#3C4C55
+  hi EndOfBuffer guifg=#3C4C55
 else
   set t_Co=256
   colorscheme hybrid_material
