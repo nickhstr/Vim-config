@@ -5,7 +5,7 @@ set linespace=5
 " Colorscheme
 colorscheme hybrid_material
 hi NonText guifg=#282a2e guibg=#282a2e
-hi CursorLine guibg=#2a2c30
+hi CursorLine guibg=#303236
 hi CursorLineNr guifg=#3c3e42 guibg=#212121
 hi LineNr guifg=#3c3e42
 hi VertSplit guifg=#282a2e guibg=#282a2e
