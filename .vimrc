@@ -215,6 +215,9 @@ else
   let g:gitgutter_sign_column_always = 1
 endif
 
+" Indent settings
+let g:indentLine_enabled = 0
+
 " vim-go settings
 let g:go_highlight_structs = 1 
 let g:go_highlight_methods = 1

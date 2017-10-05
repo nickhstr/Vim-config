@@ -23,7 +23,6 @@ hi Normal guibg=#3C4C55
 hi EndOfBuffer guifg=#3C4C55
 
 " Indent Guide
-let g:indentLine_enabled = 0
 let g:indentLine_color_gui = '#6A7D89'
 let g:indentLine_bgcolor_gui = '#3C4C55'
 
