@@ -119,12 +119,12 @@ execute pathogen#infect()
 set number
 
 if &term == "xterm-256color"
-  colorscheme hybrid_material
-  hi LineNr ctermfg=237 ctermbg=234
-  hi NonText ctermfg=234 ctermbg=234
-  hi CursorLineNr ctermfg=237 ctermbg=234
-  hi Comment ctermfg=238
-  hi Normal ctermbg=None
+  " Colorscheme
+  colorscheme nova
+  hi VertSplit guifg=#3C4C55 guibg=#3C4C55
+  hi NonText guifg=#3C4C55 guibg=#3C4C55
+  hi Normal guibg=#3C4C55
+  hi EndOfBuffer guifg=#3C4C55
 else
   set t_Co=256
   colorscheme hybrid_material
@@ -197,7 +197,7 @@ set laststatus=2
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
-let g:airline_theme = "jellybeans"
+" let g:airline_theme = "jellybeans"
 
 " Syntax settings
 let g:polyglot_disabled = ['python']
@@ -228,11 +228,11 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
 let g:go_metalinter_autosave = 1
 
-" Completor settings
-let g:completor_blacklist = ['tagbar', 'qf', 'netrw', 'unite', 'vimwiki', 'go']
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
+" " Completor settings
+" let g:completor_blacklist = ['tagbar', 'qf', 'netrw', 'unite', 'vimwiki', 'go']
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
 
 " YouCompleteMe settings
 " let g:ycm_filetype_whitelist = { 'go': 1 }
