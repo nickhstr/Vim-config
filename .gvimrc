@@ -1,6 +1,6 @@
 " Font
-set guifont=Hack:h14
-set linespace=5
+set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
+set linespace=4
 
 " Old Colorscheme
 " colorscheme hybrid_material
