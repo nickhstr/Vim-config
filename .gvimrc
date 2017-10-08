@@ -1,5 +1,5 @@
 " Font
-set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
+set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline\ Nerd\ Font\ Complete:h14
 set linespace=2
 
 " Old Colorscheme
