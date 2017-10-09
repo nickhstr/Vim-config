@@ -247,9 +247,9 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 
 " Startup commands
 " autocmd VimEnter * NERDTree
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-autocmd FileType scss setlocal shiftwidth=2 tabstop=2
-autocmd FileType css setlocal shiftwidth=2 tabstop=2
+" autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+" autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+" autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd BufNewFile,BufRead .babelrc set syntax=json
 autocmd BufNewFile,BufRead .eslintrc set syntax=json
 autocmd BufNewFile,BufRead .stylelintrc set syntax=json
