@@ -144,23 +144,6 @@ hi VertSplit ctermfg=234 ctermbg=234
 " Start NerdTree on launch
 "autocmd vimenter * NERDTree
 
-" Syntastic Options
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-
-" let g:syntastic_javascript_checkers = ["eslint"]
-" let g:syntastic_go_checkers = ["go", "errcheck", "go"]
-
-" let g:syntastic_quiet_messages = {"type": "style"}
-
-" let g:syntastic_cpp_compiler_options = " -std=c++11"
-
 " Better window management
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -195,12 +178,11 @@ inoremap <expr> <CR> BreakLine() ? "<CR><ESC>O" : "<CR>"
 " vim-airline
 set laststatus=2
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#ale#enabled = 1
 let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
 " let g:airline_theme = "jellybeans"
 
 " Syntax settings
-let g:polyglot_disabled = ['python']
 let g:jsx_ext_required = 0
 
 " NERDTree settings
@@ -230,15 +212,6 @@ let g:go_highlight_extra_types = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
 let g:go_metalinter_autosave = 1
-
-" " Completor settings
-" let g:completor_blacklist = ['tagbar', 'qf', 'netrw', 'unite', 'vimwiki', 'go']
-" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
-
-" YouCompleteMe settings
-" let g:ycm_filetype_whitelist = { 'go': 1 }
 
 " vim-esearch
 let g:esearch#out#win#open = 'enew'
