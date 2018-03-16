@@ -73,3 +73,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "bundle/vim-hybrid-material"]
+	path = bundle/vim-hybrid-material
+	url = https://github.com/kristijanhusak/vim-hybrid-material
