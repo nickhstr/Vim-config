@@ -120,25 +120,15 @@ set number
 
 if &term == "xterm-256color"
   " Colorscheme
-  colorscheme nova
-  hi VertSplit guifg=#3C4C55 guibg=#3C4C55
-  hi NonText guifg=#3C4C55 guibg=#3C4C55
-  hi Normal guibg=#3C4C55
-  hi EndOfBuffer guifg=#3C4C55
+  set background=dark
+  colorscheme hybrid_material
 else
   set t_Co=256
+  set background=dark
   colorscheme hybrid_material
-  hi LineNr ctermfg=DarkGrey
-  hi NonText ctermfg=DarkGrey
-  hi CursorLineNr ctermfg=DarkGrey
-  hi Normal ctermbg=234
-  hi Comment ctermfg=DarkGrey
 endif
 
 set cursorline
-hi CursorLine cterm=None ctermbg=None
-hi CursorLineNr cterm=None ctermbg=16
-hi Search ctermfg=255 ctermbg=25
 hi VertSplit ctermfg=234 ctermbg=234
 
 " Start NerdTree on launch
@@ -180,7 +170,7 @@ set laststatus=2
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#ale#enabled = 1
 let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
-" let g:airline_theme = "jellybeans"
+let g:airline_theme = "hybrid"
 
 " Syntax settings
 let g:jsx_ext_required = 0
