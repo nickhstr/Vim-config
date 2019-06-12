@@ -118,18 +118,18 @@ execute pathogen#infect()
 " Colors
 set number
 
-if &term == "xterm-256color"
+" if &term == "xterm-256color"
   " Colorscheme
-  set background=dark
-  colorscheme hybrid_material
-else
-  set t_Co=256
-  set background=dark
-  colorscheme hybrid_material
-endif
+  " set background=dark
+  " colorscheme hybrid_material
+" else
+  " set t_Co=256
+  " set background=dark
+  " colorscheme hybrid_material
+" endif
 
-set cursorline
-hi VertSplit ctermfg=234 ctermbg=234
+" set cursorline
+" hi VertSplit ctermfg=234 ctermbg=234
 
 " Start NerdTree on launch
 "autocmd vimenter * NERDTree
@@ -166,11 +166,11 @@ endfun
 inoremap <expr> <CR> BreakLine() ? "<CR><ESC>O" : "<CR>"
 
 " vim-airline
-set laststatus=2
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#ale#enabled = 1
-let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
-let g:airline_theme = "hybrid"
+" set laststatus=2
+" let g:airline#extensions#whitespace#enabled = 0
+" let g:airline#extensions#ale#enabled = 1
+" let g:airline_powerline_fonts = 1 " Make sure terminal uses appropriate font
+" let g:airline_theme = "hybrid"
 
 " Syntax settings
 let g:jsx_ext_required = 0
@@ -191,17 +191,17 @@ endif
 let g:indentLine_enabled = 0
 
 " vim-go settings
-let g:go_highlight_structs = 1 
-let g:go_highlight_methods = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_extra_types = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
-let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
-let g:go_metalinter_autosave = 1
+" let g:go_highlight_structs = 1 
+" let g:go_highlight_methods = 1
+" let g:go_highlight_functions = 1
+" let g:go_highlight_operators = 1
+" let g:go_highlight_build_constraints = 1
+" let g:go_highlight_types = 1
+" let g:go_highlight_fields = 1
+" let g:go_highlight_extra_types = 1
+" let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
+" let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
+" let g:go_metalinter_autosave = 1
 
 " vim-esearch
 let g:esearch#out#win#open = 'enew'
