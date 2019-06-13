@@ -208,6 +208,9 @@ let g:esearch#out#win#open = 'enew'
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
+" youcompleteme settings
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
 " Startup commands
 " autocmd VimEnter * NERDTree
 " autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
